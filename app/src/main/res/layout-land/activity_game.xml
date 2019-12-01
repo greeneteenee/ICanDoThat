@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97C4C0C0"
+    android:padding="0dp"
+    tools:context=".GameActivity">
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".80" />
+
+    <TextView
+        android:id="@+id/txt_thing1"
+        android:layout_width="0dp"
+        android:layout_height="340dp"
+        android:background="#000000"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Thing 1"
+        android:textAlignment="center"
+        android:textColor="#7E7B7B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_thing2"
+        android:layout_width="0dp"
+        android:layout_height="340dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Thing 2"
+        android:textAlignment="center"
+        android:textColor="#7E7B7B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_bluePlayer"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="#00070707"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blueplayer" />
+
+    <ImageView
+        android:id="@+id/img_redPlayer"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/redplayer" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_action"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actionbutton" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_place"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placebutton" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_challenge"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/challengebutton" />
+
+    <TextView
+        android:id="@+id/txt_action"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_action" />
+
+    <TextView
+        android:id="@+id/txt_place"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_place" />
+
+    <TextView
+        android:id="@+id/txt_challenge"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_challenge" />
+
+    <ImageView
+        android:id="@+id/img_blueThumbsDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_blueQuestion"
+        app:srcCompat="@drawable/bluethumbsdown" />
+
+    <ImageView
+        android:id="@+id/img_blueThumbsUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_blueQuestion"
+        app:srcCompat="@drawable/bluethumbsup" />
+
+    <ImageView
+        android:id="@+id/img_redThumbsDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_redQuestion"
+        app:srcCompat="@drawable/redthumbsdown" />
+
+    <ImageView
+        android:id="@+id/img_redThumbsUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_redQuestion"
+        app:srcCompat="@drawable/redthumbsup" />
+
+    <TextView
+        android:id="@+id/txt_blueQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="sans-serif"
+        android:text="Did you do it?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bluePlayer" />
+
+    <TextView
+        android:id="@+id/txt_redQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Did you do it?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/img_redPlayer" />
+
+    <EditText
+        android:id="@+id/txt_blueScore"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_blueQuestion"
+        app:layout_constraintEnd_toEndOf="@+id/txt_thing1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bluePlayer" />
+
+    <EditText
+        android:id="@+id/txt_redScore"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_redQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/img_redPlayer" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Turns left:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
